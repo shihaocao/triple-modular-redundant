@@ -1,2 +1,7 @@
 # triple-modular-redundant
-A rust based triple modular state machine and data store
+A Rust based triple modular state machine and data store
+
+### Build and Run using
+```
+cargo run
+```
