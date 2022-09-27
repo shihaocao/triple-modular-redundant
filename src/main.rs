@@ -3,14 +3,11 @@
 mod state;
 
 fn main() {
-    let mut global_state = state::State {
+    let mut global_state = state::state_dict::State {
         cycle_no: 0,
         ch0: 0,
         ch1: 1
     };
 
-    for _ in 0..20 {
-        state::step_state(&mut global_state);
-        println!("{:?}", global_state)
-    }
+    state::main_control_loop::main_loop(&mut global_state);
 }
